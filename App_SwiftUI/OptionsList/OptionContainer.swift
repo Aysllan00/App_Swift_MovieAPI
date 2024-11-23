@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct OptionContainer: View {
+    var options: [OptionType]
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 20){
-            ForEach(optionsMock){
+            ForEach(options){
                 option in OptionListView(option: option)
             }
         }
@@ -18,5 +20,5 @@ struct OptionContainer: View {
 }
 
 #Preview {
-    OptionContainer()
+    OptionContainer(options: optionsMock)
 }

@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		3CEEF9AC2CF209CA007A73A8 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 3CEEF9AB2CF209CA007A73A8 /* Alamofire */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		3CD1E6942CDFC4100014E849 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CEEF9AC2CF209CA007A73A8 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +117,7 @@
 			);
 			name = App_SwiftUI;
 			packageProductDependencies = (
+				3CEEF9AB2CF209CA007A73A8 /* Alamofire */,
 			);
 			productName = App_SwiftUI;
 			productReference = 3CD1E6832CDFC40F0014E849 /* App_SwiftUI.app */;
@@ -195,6 +201,9 @@
 			);
 			mainGroup = 3CD1E67A2CDFC40F0014E849;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				3CEEF9AA2CF209CA007A73A8 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 3CD1E6842CDFC40F0014E849 /* Products */;
 			projectDirPath = "";
@@ -552,6 +561,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		3CEEF9AA2CF209CA007A73A8 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		3CEEF9AB2CF209CA007A73A8 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3CEEF9AA2CF209CA007A73A8 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3CD1E67B2CDFC40F0014E849 /* Project object */;
 }

@@ -7,9 +7,10 @@
 
 import Foundation
 
-struct OptionType: Identifiable {
-    let id: Int
-    let icone: String
-    let titulo: String
-    let descricao: String
+struct OptionType: Identifiable, Decodable {
+    var id: Int
+    var icone: String
+    var titulo: String
+    var descricao: String
+
 }
